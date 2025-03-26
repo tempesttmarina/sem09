@@ -1,8 +1,8 @@
 
 
 
-/* Exercice 01 */ **
-nav ul:nth-child(2){
+/* Exercice 01 */ 
+nav li:nth-child(2){
     margin: 0 20px;
 }
 
@@ -23,7 +23,7 @@ nav ul:nth-child(2){
     color: red;
 }
 
-/* Exercice 05 */ **
+/* Exercice 05 */ 
 .exercice05 a[href ^= "https://"]{
     content: 'open_in_new';
     display: inline-block;
@@ -33,15 +33,20 @@ nav ul:nth-child(2){
     margin-left: 5px;
 }
 
-/* Exercice 06 */ ** 
-.exercice06 ol:nth-child(even){
+/* Exercice 06 */ 
+.exercice06 li:nth-child(even){
     background-color: red;
 }
 
 /* Exercice 07 */
-
+.exercice07 li:nth-child(odd){
+    background-color: red;
+}
 
 /* Exercice 08 */
+.exercice07 li:nth-child(1,2,3){
+    background-color: red;
+}
 
 
 /* Exercice 09 */
