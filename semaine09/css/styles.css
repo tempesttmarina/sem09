@@ -56,22 +56,41 @@ nav ul:nth-child(2){
 }
 
 /* Exercice 12 */
-
+.exercice12 > ul:hover{
+    border: 3px solid red;
+}
 
 /* Exercice 13 */
-
+.exercice13 [alt $= "format jpg"]{
+    border: 3px solid red;
+}
 
 /* Exercice 14 */
-
+nav a:hover{
+    background-color: #BF2A2A;
+    border: 3px solid #000;
+    color: #000;
+}
 
 /* Exercice 15 */
-
+h2::selection{
+    color: #fff;
+    background-color: #000;
+}
+p::selection{
+    color: white;
+    background-color: #666;
+}
 
 /* Exercice 16 */
-
+.exercice16 p:not(p[lang = "fr"]){
+    color: red;
+}
 
 /* Exercice 17 */
-
+.exercice17 input:checked + label{
+    color: red;
+}
 
 /* Exercice 18 */
 
