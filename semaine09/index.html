@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Les sélecteurs CSS</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=open_in_new" />
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+
+<header>
+    <div class="wrapper">
+        <h1>Les sélecteurs CSS</h1>
+    </div>
+</header>
+
+
+<nav>
+    <div class="wrapper">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="page1.html">Page 1</a></li>
+            <li><a href="page2.html">Page 2</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="wrapper">
+
+    <section class="intro">
+        <p>Afin de réaliser ce laboratoire, vous ne devez utiliser <strong>qu'une seule règle css par exercice</strong> sauf le #15 (::selection).</p>
+    </section>
+
+    <section class="exercice01">
+        <h2>Execice 01 - Cibler un élément avec sa position</h2>
+        <p>Ajouter une marge de 20px à gauche et à droite du deuxième élément du menu de navigation ci-haut.</p>
+    </section>
+
+
+    <section class="exercice02">
+        <h2>Exercice 02 - La première lettre</h2>
+        <p>Mettre la première lettre de <em>cette</em> citation en rouge et à 50px (mais en rem).</p>
+        <blockquote>La théorie, c'est quand on sait tout et que rien ne fonctionne. La pratique, c'est quand tout fonctionne et que personne ne sait pourquoi. Ici, nous avons réuni théorie et pratique : rien ne fonctionne... et personne ne sait pourquoi !<p>- Albert Einstein</p></blockquote>
+
+    </section>
+
+    <section class="exercice03">
+        <h2>Exercice 03 - La première ligne</h2>
+        <p>Mettre la première ligne de la citation en rouge et en gras.</p>
+        <blockquote>Je ne sais pourquoi, je me suis rappelé un mot qu'on a prêté à Clemenceau quand il a pris en main les affaires de la guerre : "La guerre est une affaire trop sérieuse pour qu'on la confie à des militaires." Évidemment, cela ressemble à une boutade ou peut passer pour un paradoxe. Pourtant, il semble bien qu'il y ait là l'expression d'un grand bon sens, d'un jugement clairvoyant à l'égard des capacités intellectuelles du monde des officiers en général. Si on prend un garçon de vingt ans qui choisit la carrière militaire, qui entre aux Écoles par lesquelles il faut passer pour devenir officier, on peut bien dire que ce qui l'attire, ce qui lui plaît, ce qui décide de son choix, c'est l'uniforme, c'est le sabre au côté, c'est le prestige, c'est l'idée d'autorité sur d'autres, le goût du commandement, la préséance qu'il y voit dans la société, toutes raisons assez enfantines, somme toute, et qui relèvent très peu de l'intelligence vraie, critique et profonde. Un attrait de gloriole, pour tout dire. Ce n'est pas la vie militaire qui l'élèvera au-dessus de tout cela. Au contraire. Il est connu que le monde des officiers, dans son ensemble, est composé de bien pauvres bonshommes au point de vue intellectuel. Si on renonce aux considérations de bêtise civique et patriotique, ce ne sont jamais eux qui concourent à la grandeur spirituelle (la seule qui compte, en définitive) d'aucun pays. Je pose en fait qu'un homme véritablement intelligent ne s'avise pas de vouloir être officier ou prêtre. <p>- Paul Léautaud</p></blockquote>
+    </section>
+
+
+    <section class="exercice04">
+        <h2>Exercice 04 - Cibler des éléments frères</h2>
+        <p>Mettre en couleur rouge seulement la balise &lt;p&gt; qui est <em>après</em> la balise &lt;ul&gt;.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, dolorem eveniet excepturi molestias nisi
+            quibusdam soluta tempore unde.</p>
+
+        <ul>
+            <li>Liste 1</li>
+            <li>Liste 2</li>
+            <li>Liste 3</li>
+        </ul>
+
+        <p>Mettre ce texte en rouge. Mettre ce texte en rouge. Mettre ce texte en rouge. Mettre ce texte en rouge. Mettre ce texte en rouge.</p>
+
+    </section>
+
+
+    <section class="exercice05">
+        <h2>Exercice 05 - Ajouter une icône sur les liens sortants.</h2>
+
+        <p>C'est pratique de pouvoir identifier visuellement des liens externes à notre site. Une façon élégante d’avertir l’internaute est de mettre une icône après les liens externes.</p>
+
+        <p>L’icône peut être une image ou de la typographie. Dans cet exemple, nous allons utiliser de la typographie.</p>
+
+        <p>Dans le &lt;head&gt;, intégrer le code nécessaire à l'utilisation de Material Icons à votre page tel qu'on le fait depuis le début.</p>
+
+        <p>Par la suite, créer une règle CSS qui <em>ajoute du contenu après</em> toutes les balises &lt;a&gt; qui ont l'attribut <strong>href</strong> avec la valeur qui <em>débute</em> par <strong>https://</strong></p>
+
+        <p>Voici la mise en forme que vous devez ajouter à la règle que vous avez créée :</p>
+
+        <pre>
+            <code>
+                content: 'key';
+                display: inline-block;
+                font-family: 'Material Icons';
+                font-size: 1.4rem;
+                line-height: 1;
+                margin-left: 5px;
+            </code>
+        </pre>
+
+        <p>Une fois la règle bien implémentée, vous devriez voir une clef après les liens externes (1er, 4e et 5e).</p>
+
+        <p>Notez bien que la valeur de l'attribut <strong>content</strong> correspond au nom de l'icône de Material Design. Vous pourriez donc la changer pour autre chose... Comme l'icône « open_in_new » par exemple qui ferait beaucoup plus de sens.</p>
+
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org/fr/docs/Glossaire/S%C3%A9lecteur_CSS">Sélecteur CSS</a>
+            </li>
+            <li>
+                <a href="page1.html">Page 1</a>
+            </li>
+            <li>
+                <a href="page2.html">Page 2</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-%C3%A9l%C3%A9ments">Pseudo-éléments</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes">Pseudo-classes</a>
+            </li>
+        </ul>
+    </section>
+
+</div>
+
+
+<footer>
+    <div class="wrapper">
+        <h4>Laboratoire semaine 09</h4>
+    </div>
+</footer>
+
+
+</body>
+</html>

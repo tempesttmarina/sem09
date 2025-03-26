@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Les sélecteurs CSS</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<header>
+    <div class="wrapper">
+        <h1>Les sélecteurs CSS</h1>
+    </div>
+</header>
+
+
+<nav>
+    <div class="wrapper">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="page1.html">Page 1</a></li>
+            <li><a href="page2.html">Page 2</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="wrapper">
+
+    <section class="exercice11">
+        <h2>Exercice 11 - Cibler un élément descendant</h2>
+        <p>Mettre une bordure rouge de 3px sur les balises &lt;ul&gt;.</p>
+
+        <ul>
+            <li>Élément 1</li>
+            <li>Élément 2</li>
+            <li>Élément 3
+                <ul>
+                    <li>Sous élément 1</li>
+                    <li>Sous élément 2</li>
+                    <li>Sous élément 3</li>
+                </ul>
+            </li>
+            <li>Élément 4</li>
+            <li>Élément 5</li>
+        </ul>
+    </section>
+
+    <section class="exercice12">
+        <h2>Exercice 12 - Cibler un élément au survol de la souris</h2>
+        <p>Mettre une bordure rouge de 3px uniquement que sur la balise &lt;ul&gt; qui est un <em>enfant direct</em> de l'élément avec la classe css exercice12.</p>
+
+        <ul>
+            <li>Élément 1</li>
+            <li>Élément 2</li>
+            <li>Élément 3
+                <ul>
+                    <li>Sous élément 1</li>
+                    <li>Sous élément 2</li>
+                    <li>Sous élément 3</li>
+                </ul>
+            </li>
+            <li>Élément 4</li>
+            <li>Élément 5</li>
+        </ul>
+    </section>
+
+    <section class="exercice13">
+        <h2>Exercice 13 - Cibler un élément avec un attribut</h2>
+        <p>Mettre une bordure rouge de 3px seulement sur la balise image dont la source est de <em>format jpg</em>.</p>
+
+        <p><img src="images/nuage.gif" alt="Nuage en format gif"><img src="images/nuage.jpg" alt="Nuage en format jpg"><img src="images/nuage.png" alt="Nuage en format png"></p>
+    </section>
+
+    <section class="exercice14">
+        <h2>Exercice 14 - Pseudo-classes et sélecteur descendant</h2>
+        <p>Au survol de la souris d’un <strong>lien</strong> du menu de navigation, mettre l’arrière-plan de cet élément à la couleur #BF2A2A. Ensuite, lui mettre une bordure de <strong>3 px</strong> de couleur <strong>noire</strong> en bas de l’élément survolé. Mettre le texte en noir de l’élément survolé.</p>
+    </section>
+
+    <section class="exercice15">
+        <h2>Exercice 15 - Sélection avec la souris</h2>
+
+        <p>Lorsque du texte de format &lt;h2&gt; est sélectionné mettre la couleur d’arrière-plan à <strong>noir</strong> et la couleur du texte à <strong>blanc</strong>.</p>
+
+        <p>Lorsque du texte de format &lt;p&gt; est sélectionné mettre la couleur d’arrière-plan à <strong>gris</strong> et la couleur du texte à <strong>blanc</strong>.</p>
+
+    </section>
+
+    <section class="exercice16">
+        <h2>Exercice 16 - Sélection par négation</h2>
+
+        <p lang="fr">Seulement pour l’exercice 16, mettre le texte en rouge des balises &lt;p&gt; qui n’ont pas <em>l’attribut</em> de langue égal à <strong>fr</strong>.</p>
+
+        <p lang="en">Anglais - Hello world!</p>
+        <p lang="fr">Français - Bonjour le monde!</p>
+        <p lang="it">Italien - Ciao mondo !</p>
+        <p lang="de">Allemand - Hallo Welt!</p>
+
+    </section>
+
+    <section class="exercice17">
+        <h2>Exercice 17 - Cibler un élément qui est sélectionné</h2>
+        <p>Lorsque qu’un élément du formulaire est sélectionné (« checked »), mettre le texte de la balise &lt;label&gt; en rouge.</p>
+
+        <form action="#">
+            <div>
+                <input id="rad1" type="radio" value="garcon" name="genre">
+                <label for="rad1">Garçon</label>
+            </div>
+            <div>
+                <input id="rad2" type="radio" value="fille" name="genre">
+                <label for="rad2">Fille</label>
+            </div>
+            <div>
+                <input id="cb1" type="checkbox" value="rouge">
+                <label for="cb1">Rouge</label>
+            </div>
+            <div>
+                <input id="cb2" type="checkbox" value="vert">
+                <label for="cb2">Vert</label>
+            </div>
+            <div>
+                <input id="cb3" type="checkbox" value="bleu">
+                <label for="cb3">Bleu</label>
+            </div>
+        </form>
+    </section>
+
+    <section class="exercice18">
+        <h2>Exercice 18 - Utilisation de JavaScript et de la librairie SplitText</h2>
+
+        <p>Nous pouvons styliser la première lettre d’une phrase avec le pseudo-éléments ::first-letter. Mais il n’y a pas de sélecteur pour la dernière lettre ou bien une lettre au centre.</p>
+
+        <p>Nous allons utiliser JavaScript et la librairie SplitText pour séparer les lettres de la balise h1 du header. Une fois les lettres séparées, nous pourrons utiliser les sélecteurs pour styliser les lettres que nous voulons.</p>
+
+        <p>Dans les pages index.html, page1.html et page2.html, faites un lien vers la librairie splittext. Elle se trouve déjà dans le répertoire js.</p>
+
+        <p>Faites un lien vers le fichier scripts.js. Il se trouve déjà dans le répertoire js. Pensez-lui ajouter l'attribut nécessaire pour le bon fonctionnement de la balise script dans le head.</p>
+
+        <p>Dans le fichier scripts.js, supprimer la ligne commentée et vérifiez l'effet dans le navigateur en sélectionnant l'élément HTML ciblé. Vous pouvez aussi aller voir dans l'inspecteur du navigateur comment la librairie splittext a modifié la balise h1 du header.</p>
+
+        <p>À vous de choisir la bonne façon de styler la dernière lettre de chaque mot.</p>
+
+        <p>Dans le CSS, écrire la règle adéquate pour mettre la couleur #640101 sur chaque dernière lettre des mots du h1.</p>
+
+        <p>Ajouter les scripts à la page 2 et la page 3.</p>
+
+    </section>
+
+
+</div>
+
+<footer>
+    <div class="wrapper">
+        <h4>Laboratoire semaine 09</h4>
+    </div>
+</footer>
+
+
+</body>
+</html>

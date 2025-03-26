@@ -1,0 +1,230 @@
+
+
+
+/* Exercice 01 */ **
+nav ul:nth-child(2){
+    margin: 0 20px;
+}
+
+/* Exercice 02 */
+
+.exercice02 h2 + p::first-letter{
+    font-size: 5.0rem;
+    color: red;
+}
+/* Exercice 03 */
+.exercice03 blockquote::first-line{
+    color: red;
+    font-weight: 700;
+}
+
+/* Exercice 04 */
+.exercice04 ul + p{
+    color: red;
+}
+
+/* Exercice 05 */ **
+.exercice05 a[href ^= "https://"]{
+    content: 'open_in_new';
+    display: inline-block;
+    font-family: 'Material Icons';
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-left: 5px;
+}
+
+/* Exercice 06 */ ** 
+.exercice06 ol:nth-child(even){
+    background-color: red;
+}
+
+/* Exercice 07 */
+
+
+/* Exercice 08 */
+
+
+/* Exercice 09 */
+
+
+/* Exercice 10 */
+
+
+/* Exercice 11 */
+.exercice11 ul{
+    border: 3px solid red;
+}
+
+/* Exercice 12 */
+
+
+/* Exercice 13 */
+
+
+/* Exercice 14 */
+
+
+/* Exercice 15 */
+
+
+/* Exercice 16 */
+
+
+/* Exercice 17 */
+
+
+/* Exercice 18 */
+
+
+
+
+
+
+/*-------------------------------------------
+-
+-   Ne rien modifier dans le CSS qui suit
+-
+-
+---------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------
+    Reset
+----------------------------------------------------------------------------*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/*------------------------------------------------------------------------------
+   Base
+------------------------------------------------------------------------------*/
+
+
+body {
+    background-color: white;
+    color: black;
+    font-size: 1.6rem;
+}
+
+
+ol {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 912px;
+
+    color: #fff;
+    font: 1em arial, sans-serif;
+
+    list-style: none;
+
+    margin: 30px auto 0;
+    padding: 10px 0 10px 10px;
+
+    border: 1px dashed #999;
+    border-radius: 10px;
+}
+
+ol li {
+    text-align: center;
+    font-weight: bold;
+
+    background: #666;
+    padding: 1%;
+
+    width: 80px;
+    height: 32px;
+
+    margin: 0 10px 10px 0;
+}
+
+/*------------------------------------------------------------------------------
+   Mise en page
+------------------------------------------------------------------------------*/
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/*------------------------------------------------------------------------------
+   Modules
+------------------------------------------------------------------------------*/
+
+
+/*------------------- Navigation --------------------*/
+
+nav {
+    background-color: #D9CA9C;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    background-color: #640101;
+    border-bottom: 3px solid transparent;
+    color: #7AB8BF;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+
+/*------------------- Entête --------------------*/
+
+header {
+    background: #BF2A2A;
+    padding: 63px 0;
+}
+
+header h1 {
+    font: 700 8rem 'Lato', sans-serif;
+    color: #F2F2F2;
+    letter-spacing: .1em;
+    margin: 0;
+    text-align: center;
+}
+
+
+/*------------------- Section --------------------*/
+
+
+section {
+    margin-top: 60px;
+}
+
+section {
+    margin-bottom: 80px;
+    overflow: auto;
+}
+
+
+/*------------------- Pied de page --------------------*/
+
+
+footer {
+    background-color: #BF2A2A;
+    padding: 10px 0;
+}
+
+.exercice13 img {
+    width: 200px;
+    height: 140px;
+}
