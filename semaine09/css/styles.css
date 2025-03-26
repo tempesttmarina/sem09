@@ -44,16 +44,20 @@ nav li:nth-child(2){
 }
 
 /* Exercice 08 */
-.exercice07 li:nth-child(1,2,3){
+.exercice08 li:nth-child(-n + 3){
     background-color: red;
 }
 
 
 /* Exercice 09 */
-
+.exercice09 li:nth-child(99){
+    background-color: red;
+}
 
 /* Exercice 10 */
-
+.exercice10 li:nth-child(n + 14):nth-child(-n + 23){
+    background-color: red;
+}
 
 /* Exercice 11 */
 .exercice11 ul{
